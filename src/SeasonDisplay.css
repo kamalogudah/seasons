@@ -32,3 +32,9 @@
 .season-display.summer i {
     color: red;
 }
+
+.red {
+    border-color: red;
+    border-width: 9px;
+    border-style: solid;
+}
