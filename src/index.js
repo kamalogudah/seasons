@@ -8,7 +8,7 @@ class App extends React.Component {
     super(props);
     // this is the only time we do direct assignment to
     // this.state
-    this.state = { lat: null, errorMessage: '' };
+    this.state = { lat: 20, errorMessage: '' };
   }
   // state = { lat: null, errorMessage: '' };
   componentDidMount() {
