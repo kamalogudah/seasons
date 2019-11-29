@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import SeasonDisplay from './SeasonDisplay';
+import Spinner from './Spinner';
 
 class App extends React.Component {
 
@@ -8,7 +9,7 @@ class App extends React.Component {
     super(props);
     // this is the only time we do direct assignment to
     // this.state
-    this.state = { lat: 20, errorMessage: '' };
+    this.state = { lat: null, errorMessage: '' };
   }
   // state = { lat: null, errorMessage: '' };
   componentDidMount() {
@@ -31,7 +32,7 @@ class App extends React.Component {
 
     }
 
-    return <div> Loading Please wait ... </div>;
+    return <Spinner />;
   }
 }
 
